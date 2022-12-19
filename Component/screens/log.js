@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   Text,
-  StyleSheet,
   TextInput,
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
+import { Icon } from 'react-native-paper/lib/typescript/components/Avatar/Avatar';
 import styles from '../styles';
 
 export default function Login({navigation}) {
@@ -32,6 +32,7 @@ export default function Login({navigation}) {
       <TouchableOpacity style={styles.btnStyle} onPress={()=>navigation.navigate('Register')}>
         <Text>LogIn</Text>
       </TouchableOpacity>
+      <Text style={styles.Text} onPress={()=>navigation.navigate('Register')}>register?</Text>
     </SafeAreaView>
   );
 }
